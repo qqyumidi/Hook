@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="200dip"
+        android:layout_height="40dip"
+        android:text="Hello World!"
+        android:background="#eeeeee"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tips"
+        android:layout_width="200dip"
+        android:layout_height="40dip"
+        android:text=""
+        android:background="#eeeeee"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/tv"
+        app:layout_constraintLeft_toLeftOf="@id/tv"
+        android:layout_marginTop="20dip"/>
+
+    <TextView
+        android:id="@+id/hook"
+        android:layout_width="200dip"
+        android:layout_height="40dip"
+        android:text="hook"
+        android:background="#eeeeee"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/tips"
+        app:layout_constraintLeft_toLeftOf="@id/tips"
+        android:layout_marginTop="20dip"/>
+
+    <TextView
+        android:id="@+id/intent_activity"
+        android:layout_width="200dip"
+        android:layout_height="40dip"
+        android:text="打开B页面"
+        android:background="#eeeeee"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/hook"
+        app:layout_constraintLeft_toLeftOf="@id/hook"
+        android:layout_marginTop="20dip"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
